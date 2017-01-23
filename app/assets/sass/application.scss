@@ -7,6 +7,11 @@
 // mainMenu.scss -- responsive icons color
 //$menu-link-color:#337ab7;
 
+//FIS brand colours
+$purple: #8C5AA0;
+$blue: #4F558E;
+$light-blue: #CCECFA;
+$dark-grey: #525252;
 
 //base.scss
 
@@ -28,8 +33,8 @@
 //$search-link:#333 ;
 
 // mainNav.scss
-//$main-nav-background:#133E8D ;
-//$main-nav-link:#fff ;
+$main-nav-background:$light-blue ;
+$main-nav-link:$dark-grey ;
 
 //footer.scss
 //$footer-font-color:#fff ;
@@ -75,12 +80,12 @@
 //$content-border-color:#ddd;
 
 // section backgrounds
-//$sectionHeader-background-color:lighten($base-background-color, 3%) ;
-//$sectionOne-background-color:darken($base-background-color, 5%) ;
-//$sectionTwo-background-color:darken($base-background-color, 10%) ;
-//$sectionThree-background-color:lighten($base-background-color, 3%) ;
-//$sectionFour-background-color:lighten($base-background-color, 5%) ;
-//$sectionFive-background-color:darken($base-background-color, 5%) ;
+$sectionHeader-background-color:$purple ;
+$sectionOne-background-color:transparent;
+$sectionTwo-background-color:#F0F6F8 ;
+$sectionThree-background-color:transparent ;
+$sectionFour-background-color:#F0F6F8 ;
+$sectionFive-background-color:transparent ;
 
 //iconlinks
 //$iconLinkIconColor:#FFC82E;
@@ -126,6 +131,51 @@ $accordion-color:green;
 @import 'blocklinks';
 @import 'contentLink';
 
+//header
+.logo {
+    background: none;
+    width: 100%;
+    font-size: 2.063em;
+    color: #fff;
+    font-weight: bold;
+    height:auto;
+    margin:40px 0;
+    
+    &:before {
+        content: "Family Information Service";
+    }
+}
+.header-right{
+    background: url(../images/cfl-logo-white.png) center right no-repeat;
+    height:120px;
+}
+
+//footer
+footer.main
+{
+    background-color:$dark-grey;
+    position:relative;
+    margin-top:220px;
+
+    &:before{
+        content:"";
+        background-image:url(../images/footer.svg);
+        background-position:center bottom;
+        height:181px;
+        width:100%;
+        display:block;
+        position:absolute;
+        top:-180px;
+    }
+
+    .footer{
+        background:$dark-grey;
+    }
+
+    .footerGlobal{
+        background:darken($dark-grey, 10%) ;
+    }
+}
 
 
 

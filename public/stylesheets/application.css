@@ -3,28 +3,28 @@ Base.sass variables
 *********************************************/
 body {
   font-size: 16px;
-  font-family: Arial;
-  color: #333;
+  font-family: "Open Sans", sans-serif;
+  color: #525252;
   background-color: #fff; }
 
 .ms-rtestate-field h1.ms-rteElement-H2, .ms-rtestate-field h2.ms-rteElement-H2, .ms-rtestate-field h3.ms-rteElement-H2, .ms-rtestate-field h4.ms-rteElement-H2, .ms-rtestate-field h5.ms-rteElement-H2 {
-  font-family: Arial;
-  color: #333; }
+  font-family: "Open Sans", sans-serif;
+  color: #525252; }
 
 .btn-primary, .button {
-  background: green;
-  box-shadow: inset 0 1px 1px #00b300; }
+  background: #337ab7;
+  box-shadow: inset 0 1px 1px #4f93ce; }
   .btn-primary:hover, .button:hover {
-    background: #004d00; }
+    background: #285f8f; }
 
 .btn, .button {
-  border-color: green;
+  border-color: #337ab7;
   color: #fff; }
   .btn.btn-default, .btn.alt, .button.btn-default, .button.alt {
-    border-color: green;
-    color: green; }
+    border-color: #337ab7;
+    color: #337ab7; }
     .btn.btn-default:hover, .btn.alt:hover, .button.btn-default:hover, .button.alt:hover {
-      background: #004d00;
+      background: #285f8f;
       color: #fff; }
 
 .container-fluid {
@@ -67,35 +67,35 @@ body {
  mainMenu.sass variables
 *********************************************/
 .ms-core-navigation {
-  font-family: Arial; }
+  font-family: "Open Sans", sans-serif; }
 
 .ms-core-listMenu-item, .ms-core-listMenu-item:link, .ms-core-listMenu-item:visited, .ms-tv-item:link, .ms-tv-item:visited, .ms-tv-header:link, .ms-tv-header:visited {
   color: #525252; }
 
 .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:hover, .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item.ms-core-listMenu-selected:hover, a.ms-tv-item:hover, a.ms-tv-header:hover, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected, .ms-tv-selected:link {
-  background-color: #b5e3f8;
+  background-color: #9ad9f6;
   color: #525252; }
 
 .main-nav {
-  background: #CCECFA; }
+  background: #B1E2F8; }
   .main-nav ul {
     width: 100%; }
     .main-nav ul li a {
       color: #525252; }
     .main-nav ul li a:hover, .main-nav ul li a:focus {
-      background-color: #b5e3f8;
+      background-color: #9ad9f6;
       color: #525252; }
     .main-nav ul li a.selected {
-      background: #b9e5f8 !important; }
+      background: #9edbf6 !important; }
   .main-nav ul ul {
-    background-color: #b5e3f8;
-    background-color: #b5e3f8; }
+    background-color: #9ad9f6;
+    background-color: #9ad9f6; }
     .main-nav ul ul li {
-      border-bottom: 1px solid #a7def6; }
+      border-bottom: 1px solid #8cd4f5; }
       .main-nav ul ul li:first-of-type {
-        border-top: 1px solid #a7def6; }
+        border-top: 1px solid #8cd4f5; }
       .main-nav ul ul li a:hover {
-        background: #a7def6; }
+        background: #8cd4f5; }
 
 /*********************************************
  End mainMenu.sass variables
@@ -106,7 +106,7 @@ body {
 ul.menu li a {
   color: #337ab7; }
   ul.menu li a:hover, ul.menu li a:focus {
-    background: #CCECFA !important; }
+    background: #B1E2F8 !important; }
   ul.menu li a.main-menu, ul.menu li a.search {
     background: #fff; }
   ul.menu li a.search {
@@ -114,10 +114,10 @@ ul.menu li a {
   ul.menu li a.search.active, ul.menu li a.search:hover, ul.menu li a.search:focus {
     background: #bdc3c7 !important; }
   ul.menu li a.main-menu {
-    background: #CCECFA !important;
+    background: #B1E2F8 !important;
     color: #fff; }
   ul.menu li a.main-menu:hover, ul.menu li a.main-menu:focus, ul.menu li a.main-menu.active {
-    background: #a7def6; }
+    background: #8cd4f5; }
 
 /*********************************************
  End ResponsiveMenu.sass variables
@@ -126,11 +126,11 @@ ul.menu li a {
  footer.sass variables
 *********************************************/
 footer.main {
-  background: #CCECFA; }
+  background: #B1E2F8; }
   footer.main p {
     color: #fff; }
   footer.main .footer {
-    background: #CCECFA; }
+    background: #B1E2F8; }
     footer.main .footer ul li a {
       border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
       color: #fff !important; }
@@ -153,10 +153,10 @@ footer.main .socialBookmarks .facebook:after, footer.main .socialBookmarks .twit
 
 footer.main .socialBookmarks a:hover:after {
   background: #fff;
-  color: #CCECFA; }
+  color: #B1E2F8; }
 
 footer.main .footerGlobal {
-  background: #b9e5f8; }
+  background: #9edbf6; }
 
 .footerGlobal nav ul {
   list-style: none;
@@ -250,30 +250,6 @@ td .ui-state-hover {
     margin: 2px 0 0;
     padding: 15px;
     background: #fff; }
-
-.promo {
-  background-size: cover !important;
-  padding: 0;
-  margin-bottom: 1.875em;
-  position: relative;
-  width: 100%;
-  min-height: 270px; }
-  .promo img {
-    max-width: 100%; }
-  .promo span {
-    background: #004f77;
-    padding: 4% 2%;
-    color: #fff;
-    border-radius: 0 3px 3px 0;
-    bottom: 17px;
-    color: #FFFFFF;
-    left: 0;
-    padding: 4% 2%;
-    position: absolute;
-    width: 89%; }
-  .promo a:hover img, .promo a:focus img {
-    opacity: 0.8;
-    filter: alpha(opacity=80); }
 
 /*****************
 CAROUSEL BOOTSTRAP
@@ -417,6 +393,31 @@ CAROUSEL BOOTSTRAP
   background: #fff; }
 
 /*END CAROUSEL BOOTSTRAP*/
+.sideNav {
+  padding: 10px 20px 20px;
+  background: #efefef;
+  margin-bottom: 20px; }
+  .sideNav h3 {
+    margin: 0.6em 0; }
+  .sideNav li {
+    list-style: none; }
+  .sideNav a {
+    font-size: 1.1em;
+    line-height: 1.2em;
+    display: inline-block;
+    margin: 0px 0px 5px;
+    padding: 10px;
+    background: #fff;
+    width: 100%; }
+    .sideNav a:hover {
+      background: #707070 !important;
+      color: #fff; }
+    .sideNav a.active {
+      color: #E67E22;
+      background: transparent; }
+      .sideNav a.active:hover {
+        background: transparent; }
+
 ul.accordion {
   list-style: none;
   padding: 0px;
@@ -437,7 +438,7 @@ ul.accordion {
         content: "\f078";
         position: absolute;
         right: 10px;
-        color: green; }
+        color: #8C5AA0; }
     ul.accordion li.active a:after {
       content: "\f077"; }
     ul.accordion li div div {
@@ -624,526 +625,6 @@ ul.promo-group {
       background: rgba(0, 0, 0, 0.5);
       border-color: transparent; }
 
-.promoListWebpart {
-  /* change of style for info span on larger features -------------------------------------------------------- */ }
-  .promoListWebpart h2 {
-    text-align: center; }
-  .promoListWebpart ul {
-    margin: 0px;
-    padding: 0px;
-    list-style: none; }
-    .promoListWebpart ul li {
-      float: left;
-      padding: 15px; }
-      .promoListWebpart ul li a {
-        position: relative;
-        overflow: hidden;
-        height: 170px;
-        display: block;
-        color: #fff;
-        background-size: cover !important;
-        background-position: 0px enter !important; }
-        .promoListWebpart ul li a span {
-          position: absolute; }
-        .promoListWebpart ul li a .info {
-          position: absolute;
-          display: inline-block;
-          bottom: 0px;
-          right: 0px;
-          padding: 20px 40px 20px 20px;
-          background: #133E8D;
-          width: 100%;
-          opacity: 0.90;
-          filter: alpha(opacity=90);
-          /* For IE8 and earlier */
-          line-height: 1.42857;
-          font-weight: 300; }
-        .promoListWebpart ul li a img {
-          position: absolute; }
-        .promoListWebpart ul li a:hover span.info,
-        .promoListWebpart ul li a:focus span.info {
-          background: #131A22;
-          text-decoration: none;
-          opacity: 1;
-          filter: alpha(opacity=100);
-          /* For IE8 and earlier */ }
-        .promoListWebpart ul li a .secondaryInfo {
-          font-family: Arial;
-          color: #fff;
-          width: 70%;
-          display: block;
-          opacity: 1;
-          filter: alpha(opacity=100);
-          /* For IE8 and earlier */
-          position: relative; }
-        .promoListWebpart ul li a .arrow {
-          position: absolute;
-          right: 0px;
-          bottom: 0px;
-          padding: 30px 0;
-          width: 15%;
-          display: block;
-          background: #0d2a60;
-          height: 100%;
-          text-align: center; }
-          .promoListWebpart ul li a .arrow:after {
-            font-family: FontAwesome;
-            font-size: 35px;
-            content: "\f105";
-            color: #fff;
-            position: absolute;
-            display: inline-block;
-            vertical-align: middle;
-            right: 0px;
-            width: 100%;
-            top: 50%;
-            margin: -25px 0 0 -36px; }
-        .promoListWebpart ul li a span.thirdInfo {
-          background: #f6f6f6;
-          right: 0px;
-          color: #333;
-          width: 33.3%;
-          min-width: 220px;
-          max-width: 100%;
-          text-align: center;
-          line-height: 60px;
-          font-size: 19.2px; }
-      .promoListWebpart ul li a[rel="xl"]:after,
-      .promoListWebpart ul li a[rel="pdf"]:after,
-      .promoListWebpart ul li a[rel="doc"]:after,
-      .promoListWebpart ul li a[rel="pp"]:after,
-      .promoListWebpart ul li a[rel="external"]:after {
-        content: ""; }
-      .promoListWebpart ul li a[rel="xl"] .arrow:after {
-        content: "\f1c3"; }
-      .promoListWebpart ul li a[rel="pdf"] .arrow:after {
-        content: "\f1c1"; }
-      .promoListWebpart ul li a[rel="doc"] .arrow:after {
-        content: "\f1c2"; }
-      .promoListWebpart ul li a[rel="pp"] .arrow:after {
-        content: "\f1c4"; }
-      .promoListWebpart ul li a[rel="external"] .arrow:after {
-        content: "\f08e"; }
-      .promoListWebpart ul li.heightTwo a {
-        height: 370px; }
-      .promoListWebpart ul li.one span.thirdInfo {
-        width: 100%;
-        min-width: 100%; }
-  .promoListWebpart li.six a span.info {
-    font-size: 40px; }
-  .promoListWebpart .six a span.secondaryInfo {
-    font-size: 20.8px;
-    display: block; }
-  .promoListWebpart .two a span.info,
-  .promoListWebpart .three a span.info,
-  .promoListWebpart .four a span.info {
-    font-size: 24px;
-    padding: 20px 100px 20px 20px; }
-  .promoListWebpart .two a span.secondaryInfo,
-  .promoListWebpart .three a span.secondaryInfo,
-  .promoListWebpart .four a span.secondaryInfo {
-    font-size: 16px; }
-  .promoListWebpart .four.heightTwo a {
-    font-size: 36.8px; }
-  @media screen and (max-width: 1000px) {
-    .promoListWebpart a span.info,
-    .promoListWebpart li.four.heightTwo a span.info,
-    .promoListWebpart li.six a span.info {
-      font-size: 24px; }
-    .promoListWebpart a span.secondaryInfo,
-    .promoListWebpart li.four.heightTwo a span.secondaryInfo,
-    .promoListWebpart li.six a span.secondaryInfo {
-      font-size: 19.2px; } }
-  @media screen and (min-width: 1000px) {
-    .promoListWebpart li.six a span.info,
-    .promoListWebpart li.four a span.info {
-      bottom: 0px;
-      top: 0px;
-      right: 0px;
-      padding: 20px;
-      text-align: center;
-      width: 33.3%;
-      min-width: 220px; }
-    .promoListWebpart li.six a span.info,
-    .promoListWebpart li.four.heightTwo a span.info {
-      padding: 80px 20px 20px 20px; }
-      .promoListWebpart li.six a span.info .arrow,
-      .promoListWebpart li.four.heightTwo a span.info .arrow {
-        height: 80px; }
-    .promoListWebpart .four a span.secondaryInfo,
-    .promoListWebpart .six a span.secondaryInfo {
-      text-align: center;
-      width: 100%; } }
-  .promoListWebpart li.promoImage a span {
-    display: none; }
-  .promoListWebpart .imgRight a {
-    background-position: 0px right !important; }
-  .promoListWebpart .imgBottom a {
-    background-position: bottom !important; }
-  .promoListWebpart .imgCenter a {
-    background-position: center center !important; }
-  .promoListWebpart .contentLink {
-    position: relative;
-    color: #333;
-    font-weight: 100;
-    padding-bottom: 100px;
-    height: 200px; }
-    .promoListWebpart .contentLink h2 {
-      font-size: 35.2px; }
-    .promoListWebpart .contentLink a {
-      color: #333; }
-      .promoListWebpart .contentLink a .arrow:after {
-        color: #133E8D; }
-      .promoListWebpart .contentLink a:hover {
-        color: #fff; }
-        .promoListWebpart .contentLink a:hover .arrow:after {
-          color: #fff; }
-    .promoListWebpart .contentLink.color p {
-      color: #333; }
-    .promoListWebpart .contentLink.color div {
-      background: #133E8D;
-      padding: 15px 15px 30px 15px; }
-    .promoListWebpart .contentLink.color.lighter div {
-      background: #174cac; }
-    .promoListWebpart .contentLink.color.darker div {
-      background: #0f306e; }
-    @media only screen and (max-width: 1200px) and (min-width: 601px) {
-      .promoListWebpart .contentLink.color div {
-        display: table-cell;
-        vertical-align: middle;
-        height: 305px;
-        width: inherit; } }
-    .promoListWebpart .contentLink.color a {
-      border: none;
-      margin: 0px;
-      width: 100%; }
-      .promoListWebpart .contentLink.color a .info {
-        background: #fff;
-        color: #333;
-        border: none;
-        opacity: 1; }
-        .promoListWebpart .contentLink.color a .info:hover, .promoListWebpart .contentLink.color a .info:focus {
-          color: #fff; }
-        .promoListWebpart .contentLink.color a .info .arrow {
-          background-color: #0d2a60; }
-    .promoListWebpart .contentLink.heightAuto {
-      height: auto;
-      padding-bottom: 0px; }
-      .promoListWebpart .contentLink.heightAuto a {
-        position: relative; }
-    .promoListWebpart .contentLink.heightTwo {
-      height: 400px; }
-    .promoListWebpart .contentLink.heightTwo a,
-    .promoListWebpart .contentLink a {
-      position: absolute;
-      z-index: auto;
-      bottom: 15px;
-      margin: 0 4.4%;
-      left: 0px;
-      height: 80px;
-      width: 91.8%;
-      background-color: transparent; }
-      .promoListWebpart .contentLink.heightTwo a span.info,
-      .promoListWebpart .contentLink a span.info {
-        background-color: transparent;
-        border-top: 1px solid #ddd; }
-      .promoListWebpart .contentLink.heightTwo a span.arrow,
-      .promoListWebpart .contentLink a span.arrow {
-        background-color: transparent; }
-      .promoListWebpart .contentLink.heightTwo a:hover span.info,
-      .promoListWebpart .contentLink.heightTwo a:focus span.info,
-      .promoListWebpart .contentLink a:hover span.info,
-      .promoListWebpart .contentLink a:focus span.info {
-        background: #131A22; }
-    .promoListWebpart .contentLink p {
-      text-align: center;
-      font-size: 24px;
-      line-height: 28px; }
-      .promoListWebpart .contentLink p strong {
-        text-align: center;
-        font-family: oswald, serif;
-        line-height: 30px;
-        font-size: 30px;
-        margin-top: 20px;
-        display: block; }
-    .promoListWebpart .contentLink.heightTwo p strong {
-      font-size: 50px;
-      line-height: 50px;
-      margin-top: 40px; }
-    @media only screen and (max-width: 600px) {
-      .promoListWebpart .contentLink.heightTwo {
-        height: auto; }
-      .promoListWebpart .contentLink p strong {
-        margin-top: 10px; } }
-  @media only screen and (max-width: 600px) {
-    .promoListWebpart .contentLink {
-      height: auto; } }
-  .promoListWebpart .content {
-    position: relative;
-    font-weight: 100;
-    padding-bottom: 100px;
-    height: 200px;
-    color: #333; }
-    .promoListWebpart .content.color div {
-      background: #133E8D;
-      padding: 15px 15px 30px 15px; }
-    .promoListWebpart .content.color.lighter div {
-      background: #1952ba; }
-    .promoListWebpart .content.color.darker div {
-      background: #071633; }
-    .promoListWebpart .content.heightAuto {
-      height: auto;
-      padding-bottom: 0px; }
-    .promoListWebpart .content.heightTwo {
-      height: 400px; }
-    .promoListWebpart .content.heightTwo a,
-    .promoListWebpart .content a {
-      display: none; }
-      .promoListWebpart .content.heightTwo a.button,
-      .promoListWebpart .content a.button {
-        display: block;
-        height: auto;
-        float: left;
-        font-size: 20px;
-        margin-right: 15px; }
-    .promoListWebpart .content p {
-      text-align: center;
-      font-size: 24px;
-      line-height: 28px; }
-      .promoListWebpart .content p strong {
-        text-align: center;
-        font-family: oswald, serif;
-        line-height: 30px;
-        font-size: 30px;
-        margin-top: 20px;
-        display: block; }
-    .promoListWebpart .content.heightTwo p strong {
-      font-size: 50px;
-      line-height: 50px;
-      margin-top: 40px; }
-    @media only screen and (max-width: 600px) {
-      .promoListWebpart .content.heightTwo {
-        height: auto; }
-      .promoListWebpart .content p strong {
-        margin-top: 10px; } }
-  .promoListWebpart .promo .info {
-    left: -10000em; }
-
-.one {
-  width: 16.6667%; }
-
-.two {
-  width: 33.33333%; }
-
-.three {
-  width: 50%; }
-
-.four {
-  width: 66.66666%; }
-
-.six {
-  width: 100%; }
-
-@media only screen and (max-width: 1200px) {
-  .one,
-  .two,
-  .four {
-    width: 50%; } }
-
-@media only screen and (max-width: 600px) {
-  .one,
-  .two,
-  .three,
-  .four {
-    width: 100%; } }
-
-.promoListWebpart ul li.catergory {
-  padding: 15px 15px 0 15px; }
-  .promoListWebpart ul li.catergory img {
-    margin-top: 10px; }
-  .promoListWebpart ul li.catergory a .info {
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    opacity: 1;
-    border-top: 1px solid #999;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-align: center; }
-  .promoListWebpart ul li.catergory.heightAuto a {
-    border: 1px solid #999;
-    height: auto;
-    display: table;
-    float: left;
-    width: 100%; }
-    .promoListWebpart ul li.catergory.heightAuto a .info {
-      opacity: 1;
-      position: relative;
-      border: none;
-      vertical-align: middle;
-      display: table-cell;
-      height: auto; }
-
-.promoListWebpart ul li.orange a .info {
-  background: #FF6666;
-  color: #fff; }
-  .promoListWebpart ul li.orange a .info .secondaryInfo {
-    color: #fff; }
-  .promoListWebpart ul li.orange a .info .arrow {
-    background: #ff5c5c; }
-    .promoListWebpart ul li.orange a .info .arrow:after {
-      color: #fff; }
-
-.promoListWebpart ul li.lime a .info {
-  background: #CCCC00;
-  color: #fff; }
-  .promoListWebpart ul li.lime a .info .secondaryInfo {
-    color: #fff; }
-  .promoListWebpart ul li.lime a .info .arrow {
-    background: #b3b300; }
-    .promoListWebpart ul li.lime a .info .arrow:after {
-      color: #fff; }
-
-.promoListWebpart ul li.yellow a .info {
-  background: #FFCC33;
-  color: #fff; }
-  .promoListWebpart ul li.yellow a .info .secondaryInfo {
-    color: #fff; }
-  .promoListWebpart ul li.yellow a .info .arrow {
-    background: #ffc61a; }
-    .promoListWebpart ul li.yellow a .info .arrow:after {
-      color: #fff; }
-
-.promoListWebpart ul li.magenta a .info {
-  background: #CC6699;
-  color: #fff; }
-  .promoListWebpart ul li.magenta a .info .secondaryInfo {
-    color: #fff; }
-  .promoListWebpart ul li.magenta a .info .arrow {
-    background: #c6538c; }
-    .promoListWebpart ul li.magenta a .info .arrow:after {
-      color: #fff; }
-
-.promoListWebpart ul li.pink a .info {
-  background: #FF6699;
-  color: #fff; }
-  .promoListWebpart ul li.pink a .info .secondaryInfo {
-    color: #fff; }
-  .promoListWebpart ul li.pink a .info .arrow {
-    background: #ff4d88; }
-    .promoListWebpart ul li.pink a .info .arrow:after {
-      color: #fff; }
-
-.promoListWebpart ul li.purple a .info {
-  background: #8C5AA0;
-  color: #fff; }
-  .promoListWebpart ul li.purple a .info .secondaryInfo {
-    color: #fff; }
-  .promoListWebpart ul li.purple a .info .arrow {
-    background: #7e5190; }
-    .promoListWebpart ul li.purple a .info .arrow:after {
-      color: #fff; }
-
-.promoListWebpart ul li.green a .info {
-  background: #009999;
-  color: #fff; }
-  .promoListWebpart ul li.green a .info .secondaryInfo {
-    color: #fff; }
-  .promoListWebpart ul li.green a .info .arrow {
-    background: teal; }
-    .promoListWebpart ul li.green a .info .arrow:after {
-      color: #fff; }
-
-.promoListWebpart .contentLink {
-  border: 15px solid #fff;
-  padding: 0px; }
-  .promoListWebpart .contentLink.heightTwo a,
-  .promoListWebpart .contentLink a {
-    width: 100%;
-    margin: 0px;
-    bottom: 0px; }
-    .promoListWebpart .contentLink.heightTwo a:hover .info,
-    .promoListWebpart .contentLink a:hover .info {
-      background: black !important; }
-  .promoListWebpart .contentLink p {
-    text-align: center;
-    font-size: 18px;
-    line-height: 25px;
-    margin: 30px; }
-    .promoListWebpart .contentLink p strong {
-      text-align: center;
-      line-height: 30px;
-      font-size: 30px;
-      margin-top: 30px;
-      display: block; }
-  .promoListWebpart .contentLink.heightTwo p strong {
-    font-size: 40px;
-    line-height: 40px;
-    margin-top: 40px; }
-  .promoListWebpart .contentLink.heightTwo.one p strong {
-    font-size: 30px;
-    line-height: 30px;
-    margin-top: 30px; }
-  .promoListWebpart .contentLink.lime {
-    background: #CCCC00; }
-    .promoListWebpart .contentLink.lime h2,
-    .promoListWebpart .contentLink.lime h3,
-    .promoListWebpart .contentLink.lime p {
-      color: #fff; }
-    .promoListWebpart .contentLink.lime a span.info {
-      border-top: 1px solid #fff; }
-  .promoListWebpart .contentLink.yellow {
-    background: #FFCC33; }
-    .promoListWebpart .contentLink.yellow h2,
-    .promoListWebpart .contentLink.yellow h3,
-    .promoListWebpart .contentLink.yellow p {
-      color: #fff; }
-    .promoListWebpart .contentLink.yellow a span.info {
-      border-top: 1px solid #fff; }
-  .promoListWebpart .contentLink.orange {
-    color: #fff;
-    background: #FF6666; }
-    .promoListWebpart .contentLink.orange h2,
-    .promoListWebpart .contentLink.orange h3,
-    .promoListWebpart .contentLink.orange p {
-      color: #fff; }
-    .promoListWebpart .contentLink.orange a span.info {
-      border-top: 1px solid #fff; }
-  .promoListWebpart .contentLink.magenta {
-    color: #fff;
-    background: #CC6699; }
-    .promoListWebpart .contentLink.magenta h2,
-    .promoListWebpart .contentLink.magenta h3,
-    .promoListWebpart .contentLink.magenta p {
-      color: #fff; }
-    .promoListWebpart .contentLink.magenta a span.info {
-      border-top: 1px solid #fff; }
-  .promoListWebpart .contentLink.pink {
-    background: #FF6699; }
-    .promoListWebpart .contentLink.pink h2,
-    .promoListWebpart .contentLink.pink h3,
-    .promoListWebpart .contentLink.pink p {
-      color: #fff; }
-    .promoListWebpart .contentLink.pink .info {
-      border-top: 1px solid #fff; }
-    .promoListWebpart .contentLink.pink a span.info {
-      border-top: 1px solid #fff; }
-  .promoListWebpart .contentLink.purple {
-    background: #8C5AA0; }
-    .promoListWebpart .contentLink.purple h2,
-    .promoListWebpart .contentLink.purple h3,
-    .promoListWebpart .contentLink.purple p {
-      color: #fff; }
-    .promoListWebpart .contentLink.purple a span.info {
-      border-top: 1px solid #fff; }
-  .promoListWebpart .contentLink.green {
-    background: #009999; }
-    .promoListWebpart .contentLink.green h2,
-    .promoListWebpart .contentLink.green h3,
-    .promoListWebpart .contentLink.green p {
-      color: #fff; }
-    .promoListWebpart .contentLink.green a span.info {
-      border-top: 1px solid #fff; }
-
 body {
   overflow: scroll; }
 
@@ -1164,16 +645,16 @@ ul.cbs-List {
 Sharepoint overides
 ********************/
 h1, h2, h3, h4, h5, ul, ol, p, input {
-  font-family: Arial;
-  color: #333; }
+  font-family: "Open Sans", sans-serif;
+  color: #525252; }
 
 h1, h2, h3, h4, h5 {
   font-weight: 400; }
 
 .ms-rtestate-field h1, .ms-rtestate-field h2, .ms-rtestate-field h3, .ms-rtestate-field h4, .ms-rtestate-field h5 {
   font-weight: 400;
-  font-family: Arial;
-  color: #333; }
+  font-family: "Open Sans", sans-serif;
+  color: #525252; }
 
 input[type=button], input[type=reset], input[type=submit], button {
   min-width: 1em; }
@@ -1749,6 +1230,42 @@ POLAROID WEBPART
       .contentLink ul li div a {
         width: 100%; }
 
+body {
+  line-height: 1.8em; }
+
+a {
+  color: #8C5AA0;
+  text-decoration: underline; }
+  a:hover, a:focus {
+    color: #A37BB3; }
+
+ul a, .breadcrumb a, a.logo {
+  text-decoration: none; }
+
+.main-nav ul li a.selected {
+  background: #CCECFA !important; }
+
+.removeSidePadding {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.masterhead a.navbar-brand {
+  background-position: center left; }
+
+h2, h3, h4 {
+  color: #636AB1;
+  margin: 0.65em 0; }
+
+.btn {
+  border-radius: 0px;
+  padding: 10px 18px;
+  border-bottom: 5px solid #255D8F;
+  color: #fff !important;
+  box-shadow: none;
+  text-decoration: none; }
+  .btn:after {
+    display: none; }
+
 .logo {
   background: none;
   width: 100%;
@@ -1757,6 +1274,9 @@ POLAROID WEBPART
   font-weight: bold;
   height: auto;
   margin: 40px 0; }
+  .logo:hover, .logo:focus, .logo:visited {
+    text-decoration: none;
+    color: #fff; }
   .logo:before {
     content: "Family Information Service"; }
 
@@ -1779,5 +1299,456 @@ footer.main {
     top: -180px; }
   footer.main .footer {
     background: #525252; }
+    footer.main .footer:after {
+      content: "";
+      width: 85px;
+      height: 85px;
+      display: inline-block;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      background: url(../images/cfl-logo-white.png) center center no-repeat; }
   footer.main .footerGlobal {
     background: #393939; }
+
+.promoListWebpart ul {
+  padding: 0px; }
+  .promoListWebpart ul li.blockLink a {
+    background-color: #F0F6F8 !important;
+    display: block;
+    padding: 40px 0;
+    position: relative;
+    background-size: 101px !important;
+    background-position: center 25% !important;
+    text-align: center;
+    min-height: 230px; }
+    .promoListWebpart ul li.blockLink a .info {
+      font-size: 18px;
+      padding: 18px 40px;
+      font-weight: 400;
+      opacity: 1;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      color: #fff; }
+      .promoListWebpart ul li.blockLink a .info .arrow {
+        height: auto;
+        width: auto;
+        right: 15px;
+        bottom: 15px;
+        position: absolute; }
+        .promoListWebpart ul li.blockLink a .info .arrow:after {
+          content: '\f138';
+          font-family: FontAwesome;
+          font-weight: normal;
+          font-style: normal;
+          text-decoration: none !important;
+          border: none;
+          font-size: 18px;
+          top: auto;
+          bottom: 15px; }
+      .promoListWebpart ul li.blockLink a .info:hover {
+        background: transparent; }
+      .promoListWebpart ul li.blockLink a .info .secondaryInfo {
+        position: relative;
+        display: block;
+        font-size: 15px;
+        line-height: 1.2em;
+        margin: 5px 0 0;
+        padding: 0 15px 0 0; }
+    .promoListWebpart ul li.blockLink a:hover .info {
+      background: transparent; }
+  .promoListWebpart ul li.blockLink.purple a, .promoListWebpart ul li.blockLink.purple a .info {
+    background-color: #8C5AA0 !important; }
+    .promoListWebpart ul li.blockLink.purple a:hover, .promoListWebpart ul li.blockLink.purple a:hover .info, .promoListWebpart ul li.blockLink.purple a .info:hover, .promoListWebpart ul li.blockLink.purple a .info:hover .info {
+      background-color: #6f487f !important; }
+  .promoListWebpart ul li.blockLink.blue a, .promoListWebpart ul li.blockLink.blue a .info {
+    background-color: #636AB1 !important; }
+    .promoListWebpart ul li.blockLink.blue a:hover, .promoListWebpart ul li.blockLink.blue a:hover .info, .promoListWebpart ul li.blockLink.blue a .info:hover, .promoListWebpart ul li.blockLink.blue a .info:hover .info {
+      background-color: #4b5296 !important; }
+  .promoListWebpart ul li.blockLink.lightblue a, .promoListWebpart ul li.blockLink.lightblue a .info {
+    background-color: #CCECFA !important;
+    color: #525252; }
+    .promoListWebpart ul li.blockLink.lightblue a .secondaryInfo, .promoListWebpart ul li.blockLink.lightblue a .info .secondaryInfo {
+      color: #525252; }
+    .promoListWebpart ul li.blockLink.lightblue a:hover, .promoListWebpart ul li.blockLink.lightblue a:hover .info, .promoListWebpart ul li.blockLink.lightblue a .info:hover, .promoListWebpart ul li.blockLink.lightblue a .info:hover .info {
+      background-color: #daf1fb !important; }
+    .promoListWebpart ul li.blockLink.lightblue a .info .arrow:after, .promoListWebpart ul li.blockLink.lightblue a .info .info .arrow:after {
+      color: #525252; }
+  .promoListWebpart ul li.blockLink.grey a, .promoListWebpart ul li.blockLink.grey a .info {
+    background-color: #525252 !important; }
+    .promoListWebpart ul li.blockLink.grey a:hover, .promoListWebpart ul li.blockLink.grey a:hover .info, .promoListWebpart ul li.blockLink.grey a .info:hover, .promoListWebpart ul li.blockLink.grey a .info:hover .info {
+      background-color: #393939 !important; }
+  .promoListWebpart ul li.blockLink.promo a {
+    background-size: cover !important;
+    min-height: 170px; }
+    .promoListWebpart ul li.blockLink.promo a .info {
+      left: 0px;
+      padding: 20px 50px 20px 20px;
+      text-align: left; }
+
+/*******************
+BLOCK LINK
+******************/
+.blockLink {
+  padding: 10px; }
+
+.blockLink a:hover,
+.blockLink a:focus {
+  background: #F0F6F8; }
+
+/* sizes */
+.five.blockLink {
+  width: 20%;
+  float: left; }
+
+.four.blockLink {
+  width: 25%;
+  float: left; }
+
+.three.blockLink {
+  width: 33.333333%;
+  float: left; }
+
+.two.blockLink {
+  width: 50%;
+  float: left; }
+
+.one.blockLink {
+  width: 100%;
+  float: left;
+  padding: 0;
+  margin-bottom: 30px; }
+
+/* responsive */
+@media (max-width: 991px) {
+  .blockLink a {
+    padding: 0;
+    min-height: 0; }
+  .three.blockLink, .four.blockLink, .five.blockLink, .six.blockLink {
+    width: 50%;
+    float: left; }
+  .blockLink a img {
+    display: none; }
+  .blockLink a span.info {
+    position: relative;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 18px 40px 18px 20px;
+    display: block;
+    text-align: left; } }
+
+@media (max-width: 600px) {
+  .blockLink {
+    padding: 5px 0; }
+  .blockLink.promo {
+    padding: 10px 0; }
+  .two.blockLink, .three.blockLink, .four.blockLink, .five.blockLink, .six.blockLink {
+    width: 100%; } }
+
+/*BLOCK LINK PROMO*/
+.blockLink.promo a {
+  overflow: hidden; }
+
+.blockLink.promo a:hover img,
+.blockLink.promo a:focus img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+
+.blockLink.promo.text a span.info {
+  padding: 20px 40px 20px 20px;
+  height: 100%;
+  width: 100%; }
+
+.blockLink.external a span.info span.arrow:after {
+  content: '\f08e'; }
+
+/* image - sizing*/
+.blockLink.promo.double a {
+  height: 360px; }
+
+.blockLink.promo.double a span.info {
+  font-size: 22px; }
+
+.five.blockLink.promo, .six.blockLink.promo {
+  float: left;
+  display: block; }
+
+.blockLink.promo.text a img {
+  display: none; }
+
+/*responsive*/
+@media (max-width: 1199px) {
+  .blockLink.promo.text a span.info {
+    height: 100%;
+    width: 100%; }
+  .blockLink.promo a span.info {
+    font-size: 1rem;
+    padding: 20px 40px 20px 20px; }
+  .blockLink.promo a img {
+    display: block; } }
+
+@media (max-width: 991px) {
+  .blockLink.promo a span.info {
+    width: 100%;
+    height: auto;
+    position: absolute; }
+  .blockLink.promo.three a img, .blockLink.promo.four a img {
+    width: 600px; } }
+
+@media (max-width: 600px) {
+  .blockLink.promo a {
+    height: 220px; }
+  .blockLink.promo.text a {
+    height: auto; }
+  .blockLink.promo.text a span.info {
+    position: relative; } }
+
+@media (min-width: 601px) and (max-width: 991px) {
+  .blockLink.promo a span.info {
+    font-size: 1rem;
+    height: 100%;
+    width: 100%; } }
+
+/*block link btn*/
+.blockLink.button a {
+  min-height: 0;
+  height: auto;
+  padding: 0;
+  text-align: left;
+  display: inline-block;
+  width: 100%; }
+
+.blockLink.button img {
+  display: none; }
+
+.blockLink.button a span.info {
+  padding: 20px 40px 20px 20px !important;
+  display: block;
+  position: relative; }
+
+/*block link content*/
+.blockLink.content {
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  background: transparent;
+  position: relative;
+  display: table;
+  min-height: 250px; }
+
+.blockLink.content span.content {
+  background: transparent;
+  display: table-cell;
+  vertical-align: middle; }
+
+.blockLink.content span.content p {
+  margin: 0;
+  font-size: 2.7rem;
+  line-height: 1.2em;
+  color: #8C5AA0;
+  font-weight: bold; }
+
+.blockLink.content a {
+  display: none; }
+
+/*BLOCK LINK END*/
+/*********************
+docs
+**********************/
+.doc {
+  padding: 10px;
+  margin: 0; }
+
+.doc a {
+  background: #676767;
+  display: block;
+  text-align: left;
+  position: relative; }
+
+.doc a:hover, .doc a:focus {
+  background: #525252; }
+
+.doc a:hover span.info, .doc a:focus span.info {
+  background: #676767;
+  color: #fff; }
+
+.doc a:before {
+  content: '\f138';
+  font-family: FontAwesome;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 45px;
+  width: 45px;
+  display: block;
+  padding: 8px 10px;
+  color: #fff;
+  font-size: 30px; }
+
+.doc.PDF a:before {
+  content: '\f1c1';
+  background: #ED1F24; }
+
+.doc.word a:before {
+  content: '\f1c2';
+  background: #294BA0; }
+
+.doc.xl a:before {
+  content: '\f1c3';
+  background: #269129; }
+
+.doc.external a:before {
+  content: '\f08e';
+  background: rgba(0, 0, 0, 0.5); }
+
+.doc a span.info {
+  background: #fff;
+  display: inline-block;
+  width: 100%;
+  color: #676767;
+  padding: 10px;
+  min-height: 170px;
+  margin-top: 45px;
+  padding-bottom: 40px; }
+
+.doc a span.info span.arrow {
+  position: absolute;
+  height: auto;
+  width: 20px;
+  right: 10px;
+  bottom: 10px;
+  background: transparent; }
+
+.doc a span.info span.arrow:after {
+  content: '\f138';
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none !important;
+  border: none; }
+
+.doc a span.thirdInfo {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  color: #f3f3f3; }
+
+.sectionOne .doc a span.info,
+.sectionThree .doc a span.info,
+.sectionFive .doc a span.info {
+  background: #F0F6F8; }
+
+.sectionOne .doc a span.info:hover,
+.sectionOne .doc a span.info:focus,
+.sectionThree .doc a span.info:hover,
+.sectionThree .doc a span.info:focus,
+.sectionFive .doc a span.info:hover,
+.sectionFive .doc a span.info:focus {
+  background: #676767; }
+
+/*sizes*/
+.five.doc {
+  width: 20%;
+  float: left; }
+
+.five.doc a span.info {
+  min-height: 230px; }
+
+.four.doc {
+  width: 25%;
+  float: left; }
+
+.three.doc {
+  width: 33.333333%;
+  float: left; }
+
+.two.doc {
+  width: 50%;
+  float: left; }
+
+.one.doc {
+  width: 100%;
+  float: left;
+  padding: 0;
+  margin-bottom: 30px; }
+
+/* responsive */
+@media (max-width: 1200px) {
+  .doc a span.info {
+    min-height: 220px; }
+  .five.doc a span.info {
+    min-height: 300px; } }
+
+@media (max-width: 991px) {
+  .three.doc, .four.doc, .five.doc {
+    width: 50%;
+    float: left; }
+  .five.doc a span.info, .doc a span.info {
+    min-height: 170px; } }
+
+@media (max-width: 600px) {
+  .two.doc, .three.doc, .four.doc, .five.doc {
+    width: 100%; }
+  .doc a span.info {
+    min-height: 0px; } }
+
+/*docs - end*/
+/*simple list*/
+.simpleList ul {
+  list-style: none;
+  text-align: left;
+  border-top: 1px solid #D8DDDF;
+  padding: 0px; }
+
+.simpleList ul li {
+  border-bottom: 1px solid #D8DDDF;
+  margin: 0px;
+  width: 100%; }
+
+.simpleList ul li a {
+  padding: 2% 10% 2% 2%;
+  color: #525252;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  position: relative; }
+  .simpleList ul li a:after {
+    content: '\f138';
+    font-family: FontAwesome;
+    font-size: 22px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none !important;
+    border: none;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -15px;
+    color: #525252; }
+
+.simpleList ul li a:hover, .simpleList ul li a:focus {
+  background: #F0F6F8 url(../img/arrow-grey.svg) 98% center no-repeat; }
+
+.simpleList ul li a span {
+  display: block;
+  color: #999; }
+
+/*related pages*/
+.sideNav {
+  background: #F0F6F8;
+  margin-bottom: 30px;
+  padding: 0px; }
+  .sideNav li {
+    margin: 0px; }
+    .sideNav li a {
+      padding: 20px;
+      border-bottom: 1px solid #D8DDDF;
+      margin: 0;
+      text-decoration: none;
+      background: #f6f6f6; }
+      .sideNav li a.active {
+        background: #8C5AA0;
+        color: #fff; }

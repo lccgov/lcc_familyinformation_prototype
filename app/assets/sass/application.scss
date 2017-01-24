@@ -9,7 +9,7 @@
 
 //FIS brand colours
 $purple: #8C5AA0;
-$blue: #4F558E;
+$blue: #636AB1;
 $light-blue: #CCECFA;
 $dark-grey: #525252;
 
@@ -17,12 +17,12 @@ $dark-grey: #525252;
 
 //$base-background-color:#fff;
 //$base-font-size:16px ;
-//$base-font-color:#333 ;
-//$base-link-color:#133E8D ;
+$base-font-color:#525252 ;
+$base-link-color:#8C5AA0 ;
 //$base-container-width:1500px ;
-//$btn-background-color:green ;
-//$font-primary: Arial ; // main font
-//$font-secondary: Arial ; // secondary font
+$btn-background-color:#337ab7 ;
+$font-primary: 'Open Sans', sans-serif; // main font
+$font-secondary:  'Open Sans', sans-serif ; // secondary font
 
 
 // global used on all partials to get a uniform spacing between elements
@@ -33,7 +33,7 @@ $dark-grey: #525252;
 //$search-link:#333 ;
 
 // mainNav.scss
-$main-nav-background:$light-blue ;
+$main-nav-background:#B1E2F8 ;
 $main-nav-link:$dark-grey ;
 
 //footer.scss
@@ -100,7 +100,7 @@ $news-pod-back:#ffffff ;
 $news-pod-border-color:#ddd;
 
 //accordion
-$accordion-color:green;
+$accordion-color:#8C5AA0;
 //$accordion-border-color:#ECF0F1;
 
 @import 'mixins';
@@ -112,15 +112,15 @@ $accordion-color:green;
 //@import 'mainMenuSubsites';
 @import 'breadcrumb';
 @import 'sectionSubsite';
-@import 'promo';
+//@import 'promo';
 @import 'carousel';
 //@import 'socialMedia';
-//@import 'sideNavigation';
+@import 'sideNavigation';
 //@import 'blockLinks';
 @import 'accordion';
 @import 'promoGroup';
 @import 'alerts';
-@import 'promoListwebpart';
+//@import 'promoListwebpart';
 //@import 'eventsWebparts';
 @import 'sharepointOverides';
 @import 'iconLinks';
@@ -131,6 +131,61 @@ $accordion-color:green;
 @import 'blocklinks';
 @import 'contentLink';
 
+
+body{
+    line-height: 1.8em;
+}
+// frontrend tooolkit overides
+
+a{
+    color:#8C5AA0;
+    text-decoration: underline;
+    &:hover, &:focus{
+        color:#A37BB3;
+    }
+
+
+}
+
+ul a, .breadcrumb a, a.logo {
+    text-decoration: none;
+}
+
+
+.main-nav ul li a.selected {
+    background: #CCECFA !important;
+}
+
+
+.removeSidePadding{
+  padding-left:0px;
+  padding-right:0px;
+}
+
+.masterhead a.navbar-brand{
+    background-position:center left;
+}
+//  End frontrend tooolkit overides
+
+h2, h3, h4
+{
+   color:#636AB1;
+   margin:0.65em 0
+}
+
+.btn {
+    border-radius: 0px;
+    padding: 10px 18px;
+    border-bottom: 5px solid #255D8F;
+    color: #fff !important;
+    box-shadow:none;
+    text-decoration: none;
+
+    &:after{
+        display:none;
+    }
+}
+
 //header
 .logo {
     background: none;
@@ -140,6 +195,11 @@ $accordion-color:green;
     font-weight: bold;
     height:auto;
     margin:40px 0;
+
+    &:hover, &:focus, &:visited {
+        text-decoration:none;
+        color:#fff;
+    }
     
     &:before {
         content: "Family Information Service";
@@ -170,6 +230,17 @@ footer.main
 
     .footer{
         background:$dark-grey;
+
+    &:after {
+    content: "";
+    width: 85px;
+    height: 85px;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: url(../images/cfl-logo-white.png) center center no-repeat;
+}
     }
 
     .footerGlobal{
@@ -180,4 +251,672 @@ footer.main
 
 
 
+.promoListWebpart ul{
+   
+   padding:0px;
+
+
+ li.blockLink {
+
+
+    a {
+        background-color: #F0F6F8 !important;
+        display: block;
+        padding: 40px 0;
+        position: relative;
+        background-size: 101px !important;
+        background-position: center 25% !important;
+        text-align: center;
+        min-height:230px;
+     
+        .info {
+           
+            font-size: 18px;
+            padding: 18px 40px;
+            font-weight:400;
+            opacity: 1;
+            position:absolute;
+            left:0;
+            bottom:0;
+            width:100%;
+            color: #fff;
+
+
+            .arrow {
+                
+                height:auto;
+                width:auto;
+                right:15px;
+                bottom:15px;
+                position: absolute;
+
+                &:after{
+                    content: '\f138';
+                    font-family: FontAwesome;
+                    font-weight: normal;
+                    font-style: normal;
+                    text-decoration: none !important;
+                    border: none;
+                    font-size: 18px;
+                    top:auto;
+                    bottom:15px;
+                }
+            }
+
+            &:hover{
+                background:transparent;
+            }
+
+         .secondaryInfo {
+                position: relative;
+                display: block;
+                font-size: 15px;
+                line-height: 1.2em;
+                margin: 5px 0 0;
+                padding: 0 15px 0 0;
+            }
+
+
+        }
+
+            &:hover
+             .info{
+                background:transparent;
+            }
+    }
+
+
+
+&.purple a, &.purple a .info {
+    background-color: $purple !important;
+    &:hover,  &:hover .info{
+         background-color:darken( $purple, 10%) !important;
+    }
+
+
+}
+
+&.blue a, &.blue a .info {
+    background-color: $blue !important;
+        &:hover, &:hover .info{
+         background-color:darken($blue , 10%) !important;
+    }
+
+    
+}
+
+&.lightblue a, &.lightblue a .info  {
+    background-color: $light-blue !important;
+    color:#525252;
+
+    .secondaryInfo{
+        color:#525252;
+    }
+
+        &:hover,  &:hover .info {
+         background-color:lighten($light-blue, 3%) !important;
+    }
+
+
+    .info .arrow:after{
+        color:#525252;
+    }
+}
+
+&.grey a, &.grey a .info {
+    background-color: $dark-grey !important;
+
+           &:hover,  &:hover .info{
+         background-color:darken($dark-grey, 10%) !important;
+    }
+}
+
+
+&.promo a {
+
+    background-size:cover !important;
+    min-height:170px;
+
+    .info{
+        left:0px;
+        padding:20px 50px 20px 20px;
+        text-align: left;
+    }
+
+}
+
+
+ }
+
+
+}
+
+
+
+/*******************
+BLOCK LINK
+******************/
+
+.blockLink{
+	padding:10px;
+}
+
+
+.blockLink a:hover,
+.blockLink a:focus{
+    background:#F0F6F8;
+}
+
+
+
+
+/* sizes */
+
+.five.blockLink{
+    width:20%;
+    float: left;
+}
+
+.four.blockLink{
+    width:25%;
+    float:left;
+}
+
+.three.blockLink{
+    width:33.333333%;
+    float:left;
+}
+
+.two.blockLink{
+    width:50%;
+    float:left;
+}
+
+.one.blockLink{
+    width:100%;
+    float:left;
+    padding:0;
+    margin-bottom:30px;
+}
+
+/* responsive */
+
+@media (max-width: 991px){
+    
+    .blockLink a {
+        padding: 0;
+        min-height: 0;
+    }
+    
+    .three.blockLink, .four.blockLink, .five.blockLink, .six.blockLink{
+        width:50%;
+        float:left;
+    }
+    
+    .blockLink a img{
+        display:none;
+    }
+
+    .blockLink a span.info{
+        position:relative;
+        width:100%;
+        left:0;
+        bottom:0;
+        padding: 18px 40px 18px 20px;
+        display:block;
+        text-align:left;
+    }
+
+}
+
+@media (max-width: 600px){
+    
+    .blockLink{
+        padding:5px 0;
+    }
+    
+    .blockLink.promo{
+        padding:10px 0;
+    }
+    
+    .two.blockLink, .three.blockLink, .four.blockLink, .five.blockLink, .six.blockLink{
+        width:100%;
+    }
+
+}
+
+/*BLOCK LINK PROMO*/
+
+.blockLink.promo a{
+
+    overflow:hidden;
+}
+
+.blockLink.promo a:hover img,
+.blockLink.promo a:focus img{
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+
+
+.blockLink.promo.text a span.info{
+    padding: 20px 40px 20px 20px;
+    height: 100%;
+    width: 100%;
+}
+
+
+.blockLink.external a span.info span.arrow:after{
+    content: '\f08e';
+}
+
+
+
+/* image - sizing*/
+
+.blockLink.promo.double a{
+    height:360px;
+}
+
+.blockLink.promo.double a span.info{
+    font-size:22px;
+}
+
+
+
+.five.blockLink.promo, .six.blockLink.promo {
+    float: left;
+    display: block;
+}
+
+.blockLink.promo.text a img{
+    display:none;
+}
+
+/*responsive*/
+
+@media (max-width: 1199px){
+
+    .blockLink.promo.text a span.info{
+        height:100%;
+        width:100%;
+    }
+    
+    .blockLink.promo a span.info{
+        font-size:1rem;
+        padding:20px 40px 20px 20px;
+    }
+    
+    .blockLink.promo a img {
+        display: block;
+    }
+    
+}
+
+@media (max-width: 991px){
+
+    
+    .blockLink.promo a span.info{
+        width:100%;
+        height:auto;
+        position:absolute;
+    }
+    
+    .blockLink.promo.three a img, .blockLink.promo.four a img{
+        width:600px;
+    }
+    
+}
+
+@media (max-width: 600px){
+    
+ 
+    
+    .blockLink.promo a{
+        height:220px;
+    }
+    
+    .blockLink.promo.text a{
+        height:auto;
+    }
+    
+    .blockLink.promo.text a span.info{
+        position:relative;
+    }
+    
+}
+
+
+@media (min-width: 601px) and (max-width: 991px){
+    
+    
+    .blockLink.promo a span.info {
+        font-size:1rem;
+        height: 100%;
+        width: 100%;
+    }
+    
+}
+
+/*block link btn*/
+
+.blockLink.button a{
+    min-height:0;
+    height:auto;
+    padding:0;
+    text-align:left;
+    display:inline-block;
+    width:100%;
+}
+
+.blockLink.button img{
+    display:none
+}
+
+.blockLink.button a span.info{
+    padding:20px 40px 20px 20px !important;
+    display:block;
+    position:relative;
+}
+
+/*block link content*/
+
+.blockLink.content{
+	text-align:center;
+	padding:10px;
+	margin:0;
+    background:transparent;
+    position:relative;
+    display:table;
+    min-height: 250px;
+}
+
+.blockLink.content span.content{
+	background:transparent;
+    display:table-cell;
+    vertical-align: middle;
+}
+
+.blockLink.content span.content p{
+	margin:0;
+    font-size:2.7rem;
+    line-height:1.2em;
+    color:#8C5AA0;
+    font-weight:bold;
+}
+
+.blockLink.content a{
+    display:none;
+}
+
+/*BLOCK LINK END*/
+
+/*********************
+docs
+**********************/
+
+.doc{
+    padding:10px;
+    margin:0;
+}
+
+.doc a{
+    background:#676767;
+    display:block;
+    text-align:left;
+    position:relative;
+}
+
+.doc a:hover, .doc a:focus{
+    background:#525252;
+}
+
+.doc a:hover span.info, .doc a:focus span.info{
+    background:#676767;
+    color:#fff;
+}
+
+.doc a:before{
+    content: '\f138';
+    font-family: FontAwesome;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:45px;
+    width:45px;
+    display:block;
+    padding:8px 10px;
+    color:#fff;
+    font-size:30px;
+
+
+}
+
+.doc.PDF a:before{
+  content: '\f1c1';
+  background:#ED1F24;
+}
+
+.doc.word a:before{
+    content: '\f1c2';
+    background:#294BA0;
+}
+
+.doc.xl a:before{
+    content: '\f1c3';
+    background:#269129;
+}
+
+.doc.external a:before{
+    content: '\f08e';
+    background:rgba(0,0,0, 0.5);
+}
+
+
+
+
+.doc a span.info{
+    background:#fff;
+    display:inline-block;
+    width:100%;
+    color:#676767;
+    padding:10px;
+    min-height:170px;
+    margin-top:45px;
+    padding-bottom:40px;
+}
+
+.doc a span.info span.arrow{
+    position:absolute;
+    height:auto;
+    width:20px;
+    right:10px;
+    bottom:10px;
+    background:transparent;
+}
+
+.doc a span.info span.arrow:after{
+    content: '\f138';
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none !important;
+    border: none;
+}
+
+.doc a span.thirdInfo{
+    position:absolute;
+    top:8px;
+    right:10px;
+    color:#f3f3f3;
+}
+
+.sectionOne .doc a span.info,
+.sectionThree .doc a span.info,
+.sectionFive .doc a span.info{
+    background:#F0F6F8;
+}
+
+.sectionOne .doc a span.info:hover,
+.sectionOne .doc a span.info:focus,
+.sectionThree .doc a span.info:hover,
+.sectionThree .doc a span.info:focus,
+.sectionFive .doc a span.info:hover,
+.sectionFive .doc a span.info:focus{
+    background:#676767;
+}
+
+/*sizes*/
+
+.five.doc{
+    width:20%;
+    float:left;
+}
+
+.five.doc a span.info{
+    min-height:230px;
+}
+
+.four.doc{
+    width:25%;
+    float:left;
+}
+
+.three.doc{
+    width:33.333333%;
+    float:left;
+}
+
+.two.doc{
+    width:50%;
+    float:left;
+}
+
+.one.doc{
+    width:100%;
+    float:left;
+    padding:0;
+    margin-bottom:30px;
+}
+
+/* responsive */
+
+@media (max-width: 1200px){
+
+    .doc a span.info{
+        min-height:220px;
+    }
+    
+    .five.doc a span.info{
+        min-height:300px;
+    }
+    
+}
+
+@media (max-width: 991px){
+    
+    .three.doc, .four.doc, .five.doc{
+        width:50%;
+        float:left;
+    }
+    
+    .five.doc a span.info, .doc a span.info{
+        min-height:170px;
+    }
+
+}
+
+@media (max-width: 600px){
+    
+    .two.doc, .three.doc, .four.doc, .five.doc{
+        width:100%;
+    }
+    
+    .doc a span.info{
+        min-height:0px;
+    }
+
+}
+
+/*docs - end*/
+
+
+/*simple list*/
+
+.simpleList ul {
+    list-style:none;
+    text-align:left;
+    border-top:1px solid #D8DDDF;
+    padding:0px;
+}
+
+.simpleList ul li{
+    border-bottom:1px solid #D8DDDF;
+    margin:0px;
+    width:100%;
+}
+
+.simpleList ul li a{
+    padding:2% 10% 2% 2%;
+    color:#525252;
+    text-decoration:none;
+    display:inline-block;
+    width:100%;
+    position:relative;
+    
+    &:after{
+    content: '\f138';
+    font-family: FontAwesome;
+    font-size:22px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none !important;
+    border: none;
+    position:absolute;
+    right:15px;
+    top:50%;
+    margin-top:-15px;
+    color:#525252;
+}
+}
+
+.simpleList ul li a:hover, .simpleList ul li a:focus{
+    background:#F0F6F8 url(../img/arrow-grey.svg) 98% center no-repeat;
+}
+
+.simpleList ul li a span{
+    display:block;
+    color:#999;
+}
+
+
+/*related pages*/
+
+.sideNav {
+    background:#F0F6F8;
+    margin-bottom:30px;
+
+    padding:0px;
+
+   li{
+        margin:0px;
+
+           a{
+            padding: 20px;
+            border-bottom: 1px solid #D8DDDF;
+            margin: 0;
+            text-decoration:none;
+            background:#f6f6f6;
+
+
+             &.active{
+                background:#8C5AA0;
+                color:#fff;
+             }
+    }
+    }
+
+ 
+}
 

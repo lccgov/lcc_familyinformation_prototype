@@ -31,7 +31,7 @@ body {
   max-width: 1500px; }
 
 .sectionHeader {
-  background: #8C5AA0; }
+  background: #fff; }
 
 .sectionOne {
   background: transparent; }
@@ -70,32 +70,32 @@ body {
   font-family: "Open Sans", sans-serif; }
 
 .ms-core-listMenu-item, .ms-core-listMenu-item:link, .ms-core-listMenu-item:visited, .ms-tv-item:link, .ms-tv-item:visited, .ms-tv-header:link, .ms-tv-header:visited {
-  color: #525252; }
+  color: #fff; }
 
 .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:hover, .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item.ms-core-listMenu-selected:hover, a.ms-tv-item:hover, a.ms-tv-header:hover, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected, .ms-tv-selected:link {
-  background-color: #9ad9f6;
-  color: #525252; }
+  background-color: #266094;
+  color: #fff; }
 
 .main-nav {
-  background: #B1E2F8; }
+  background: #2B6DA8; }
   .main-nav ul {
     width: 100%; }
     .main-nav ul li a {
-      color: #525252; }
+      color: #fff; }
     .main-nav ul li a:hover, .main-nav ul li a:focus {
-      background-color: #9ad9f6;
-      color: #525252; }
+      background-color: #266094;
+      color: #fff; }
     .main-nav ul li a.selected {
-      background: #9edbf6 !important; }
+      background: #276298 !important; }
   .main-nav ul ul {
-    background-color: #9ad9f6;
-    background-color: #9ad9f6; }
+    background-color: #266094;
+    background-color: #266094; }
     .main-nav ul ul li {
-      border-bottom: 1px solid #8cd4f5; }
+      border-bottom: 1px solid #235888; }
       .main-nav ul ul li:first-of-type {
-        border-top: 1px solid #8cd4f5; }
+        border-top: 1px solid #235888; }
       .main-nav ul ul li a:hover {
-        background: #8cd4f5; }
+        background: #235888; }
 
 /*********************************************
  End mainMenu.sass variables
@@ -106,7 +106,7 @@ body {
 ul.menu li a {
   color: #337ab7; }
   ul.menu li a:hover, ul.menu li a:focus {
-    background: #B1E2F8 !important; }
+    background: #2B6DA8 !important; }
   ul.menu li a.main-menu, ul.menu li a.search {
     background: #fff; }
   ul.menu li a.search {
@@ -114,10 +114,10 @@ ul.menu li a {
   ul.menu li a.search.active, ul.menu li a.search:hover, ul.menu li a.search:focus {
     background: #bdc3c7 !important; }
   ul.menu li a.main-menu {
-    background: #B1E2F8 !important;
+    background: #2B6DA8 !important;
     color: #fff; }
   ul.menu li a.main-menu:hover, ul.menu li a.main-menu:focus, ul.menu li a.main-menu.active {
-    background: #8cd4f5; }
+    background: #235888; }
 
 /*********************************************
  End ResponsiveMenu.sass variables
@@ -126,11 +126,11 @@ ul.menu li a {
  footer.sass variables
 *********************************************/
 footer.main {
-  background: #B1E2F8; }
+  background: #2B6DA8; }
   footer.main p {
     color: #fff; }
   footer.main .footer {
-    background: #B1E2F8; }
+    background: #2B6DA8; }
     footer.main .footer ul li a {
       border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
       color: #fff !important; }
@@ -153,10 +153,10 @@ footer.main .socialBookmarks .facebook:after, footer.main .socialBookmarks .twit
 
 footer.main .socialBookmarks a:hover:after {
   background: #fff;
-  color: #B1E2F8; }
+  color: #2B6DA8; }
 
 footer.main .footerGlobal {
-  background: #9edbf6; }
+  background: #276298; }
 
 .footerGlobal nav ul {
   list-style: none;
@@ -1243,7 +1243,7 @@ ul a, .breadcrumb a, a.logo {
   text-decoration: none; }
 
 .main-nav ul li a.selected {
-  background: #CCECFA !important; }
+  background: #2C89C5 !important; }
 
 .removeSidePadding {
   padding-left: 0px;
@@ -1251,6 +1251,9 @@ ul a, .breadcrumb a, a.logo {
 
 .masterhead a.navbar-brand {
   background-position: center left; }
+
+.masterhead {
+  border-bottom: 1px solid #ddd; }
 
 h2, h3, h4 {
   color: #636AB1;
@@ -1267,25 +1270,23 @@ h2, h3, h4 {
     display: none; }
 
 .logo {
-  background: none;
+  background: url(../images/logo.png) center left no-repeat;
   width: 100%;
   font-size: 2.063em;
   color: #fff;
   font-weight: bold;
-  height: auto;
+  height: 150px;
   margin: 40px 0; }
   .logo:hover, .logo:focus, .logo:visited {
     text-decoration: none;
     color: #fff; }
-  .logo:before {
-    content: "Family Information Service"; }
 
 .header-right {
-  background: url(../images/cfl-logo-white.png) center right no-repeat;
-  height: 120px; }
+  background: url(../images/cfl-logo.png) center right no-repeat;
+  height: 120px;
+  margin-top: 50px; }
 
 footer.main {
-  background-color: #525252;
   position: relative;
   margin-top: 220px; }
   footer.main:before {
@@ -1297,19 +1298,15 @@ footer.main {
     display: block;
     position: absolute;
     top: -180px; }
-  footer.main .footer {
-    background: #525252; }
-    footer.main .footer:after {
-      content: "";
-      width: 85px;
-      height: 85px;
-      display: inline-block;
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      background: url(../images/cfl-logo-white.png) center center no-repeat; }
-  footer.main .footerGlobal {
-    background: #393939; }
+  footer.main .footer:after {
+    content: "";
+    width: 85px;
+    height: 85px;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: url(../images/cfl-logo-white.png) center center no-repeat; }
 
 .promoListWebpart ul {
   padding: 0px;
@@ -1564,7 +1561,7 @@ docs
   margin: 0; }
 
 .doc a {
-  background: #676767;
+  background: #2B6DA8;
   display: block;
   text-align: left;
   position: relative; }

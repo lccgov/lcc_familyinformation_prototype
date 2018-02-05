@@ -1,71 +1,53 @@
 // available variables to change the brand colours as required
 // masterhead.scss
-
 //$head-background: #ffffff;
-
-
 // mainMenu.scss -- responsive icons color
 //$menu-link-color:#337ab7;
-
 //FIS brand colours
 $purple: #8C5AA0;
 $blue: #636AB1;
 $light-blue: #CCECFA;
 $dark-grey: #525252;
-
 //base.scss
-
 //$base-background-color:#fff;
 //$base-font-size:16px ;
-$base-font-color:#525252 ;
-$base-link-color:#8C5AA0 ;
+$base-font-color:#525252;
+$base-link-color:#8C5AA0;
 //$base-container-width:1500px ;
-$btn-background-color:#337ab7 ;
-$font-primary: 'Open Sans', sans-serif; // main font
-$font-secondary:  'Open Sans', sans-serif ; // secondary font
-
-
+$btn-background-color:#337ab7;
+$font-primary: 'Open Sans',
+sans-serif; // main font
+$font-secondary: 'Open Sans',
+sans-serif; // secondary font
 // global used on all partials to get a uniform spacing between elements
 //$base-margin-bottom:1.875em ;
-
 //headerTop
 //$search-link-background:#F3F3F4 ;
 //$search-link:#333 ;
-
 // mainNav.scss
-$main-nav-background:#B1E2F8 ;
-$main-nav-link:$dark-grey ;
-
+$main-nav-background:#B1E2F8;
+$main-nav-link:$dark-grey;
 //footer.scss
 //$footer-font-color:#fff ;
 //$footer-nav-selected-link:#133E8D ;
-
 // sectionSubsite.scss - socialamedia.scss
 //$section-Background:#efefef ;
-
 //  socialamedia.scss
 //$social-link-color:#337ab7 ;
-
 //  sideNavigation.scss
 //$side-nav-active-background:#133E8D ;
-
 //  carousel.scss
 //$carousel-active-background:#000 ;
 //$carousel-indicators-active-background:#ccc ;
 //$carousel-caption-background: rgba(0,0,0,0.6) ;
 //$carousel-caption-font-color:#fff ;
-
-
 // blocklinks.scss
-
 //$block-link-back:#f6f6f6 ;
 //$block-link-back-hover:#3380A4 ;
 //$promo-group-border:1px solid #fff ; 
 //$promo-group-background:#EDF2F5 ; 
 //$promo-group-li-background:#EDF2F5 ;
 //$promo-group-link-color:#216486 ;
-
-
 //promolist webpart
 //$link-font-color:#fff;
 //$span-info-color:#133E8D;
@@ -78,665 +60,646 @@ $main-nav-link:$dark-grey ;
 //$contentFontColor:#333;
 //$content-arrow-color:#133E8D;
 //$content-border-color:#ddd;
-
 // section backgrounds
-$sectionHeader-background-color:$purple ;
+$sectionHeader-background-color:$purple;
 $sectionOne-background-color:transparent;
-$sectionTwo-background-color:#F0F6F8 ;
-$sectionThree-background-color:transparent ;
-$sectionFour-background-color:#F0F6F8 ;
-$sectionFive-background-color:transparent ;
-
+$sectionTwo-background-color:#F0F6F8;
+$sectionThree-background-color:transparent;
+$sectionFour-background-color:#F0F6F8;
+$sectionFive-background-color:transparent;
 //iconlinks
 //$iconLinkIconColor:#FFC82E;
-
 //heroBanner
 //$heroFontBackground:rgba(0, 0, 0, 0.5); 
 //$heroFontcolor:#fff; 
-
 //news
 //$news-button-background: #3498DB ;
-$news-pod-back:#ffffff ;
+$news-pod-back:#ffffff;
 $news-pod-border-color:#ddd;
-
 //accordion
 $accordion-color:#8C5AA0;
 //$accordion-border-color:#ECF0F1;
-
-@import 'mixins';
-@import 'variables';
-@import 'brandColors';
-
+//button colours
+$primary-button-background-color:#8C5AA0;
+$primary-button-color:white !default;
+//$secondary-button-background-color:blue;
+//$secondary-button-color:white;
+//$outline-button-border-color:blue;
+//$outline-button-color:blue;
+@import 'base';
 // available sass files please un-comment out as required
-
-//@import 'mainMenuSubsites';
-@import 'breadcrumb';
-@import 'sectionSubsite';
-//@import 'promo';
-@import 'carousel';
-//@import 'socialMedia';
-@import 'sideNavigation';
-//@import 'blockLinks';
+@import '2010-typography-overrides';
 @import 'accordion';
-@import 'promoGroup';
-@import 'alerts';
-//@import 'promoListwebpart';
-//@import 'eventsWebparts';
-@import 'sharepointOverides';
-@import 'iconLinks';
-@import 'heroBanner';
+@import 'a-to-z';
+@import 'block-links';
+@import 'block-quote';
+@import 'brand-colors';
+@import 'carousel';
+@import 'content-assets'; //subsite only
+@import 'content-link'; //subsite only
+@import 'description-list';
+@import 'doc-list'; //needs aligning with lcc_doc-list and a.doc within typography - DH
+@import 'events-search-results';
+@import 'events-webparts';
+@import 'group-promo';
+//@import 'hero-banner';
+@import 'hero-banner-overlay'; //needs aligning with hero-bnner - RM
+@import 'icon-links';
+//@import 'lcc-base-styles'; //needs finalising - DH & RM
+//@import 'lcc-doc-list'; //see above - DH
+//@import 'lcc-footer'; //needs aligning with footer - is it leeds.gov specific? - DH
+//@import 'lcc-header'; //needs aligning with header - is it leeds.gov specific? - DH
+//@import 'lcc-hero'; //needs aligning with hero - is it leeds.gov specific? - DH
+//@import 'lcc-news'; //needs aligning with footer - is it leeds.gov specific? - DH
+//@import 'lcc-search'; //needs aligning with global search - is it leeds.gov specific? - DH
+@import 'mega-promo';
 @import 'news';
-@import 'polaroids';
-@import 'groupPromo';
-@import 'blocklinks';
-@import 'contentLink';
+@import 'open-data'; //is it leeds.gov.uk specific? - does it need re-naming- DH
+@import 'journey-page';
+@import 'phase-banner'; //work needed to have in page beta banner
+@import 'polaroids'; //subsite only
+//@import 'promo';
+@import 'promo-list-webpart'; //subsite only
+@import 'section-subsite'; //subsite only
+@import 'sharepoint-overrides';
+@import 'side-nav'; //needs aligning with side-navigation - DH & RM
+@import 'side-navigation'; //needs aligning with side-nav - DH & RM
+//@import 'survey-webpart'; //is it leeds.gov specific? Relys on where-i-live which should be in the fet but renamed to search-panel - DH
+@import 'url-helper';
+@import 'webchat';
+.masterhead {
+    height: 60px;
+}
+ul.menu li a.main-menu:before {
+    display: none;
+}
 
+ul.menu li a.main-menu {
+    background: transparent !important;
+    color: $base-link-color;
+}
 
-body{
+ul.menu li a.search {
+    background: transparent !important;
+    color: $base-link-color;
+}
+
+body {
     line-height: 1.8em;
 }
+
 // frontrend tooolkit overides
-
-a{
-    color:#8C5AA0;
+a {
+    color: #8C5AA0;
     text-decoration: underline;
-    &:hover, &:focus{
-        color:#A37BB3;
+    &:hover,
+    &:focus {
+        color: #A37BB3;
     }
-
-
 }
 
-ul a, .breadcrumb a, a.logo {
+ul a,
+.breadcrumb a,
+a.logo {
     text-decoration: none;
 }
-
 
 .main-nav ul li a.selected {
     background: #CCECFA !important;
 }
 
-
-.removeSidePadding{
-  padding-left:0px;
-  padding-right:0px;
+.removeSidePadding {
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
-.masterhead a.navbar-brand{
-    background-position:center left;
+.masterhead a.navbar-brand {
+    background-position: center left;
 }
+
 //  End frontrend tooolkit overides
-
-h2, h3, h4
-{
-   color:#636AB1;
-   margin:0.65em 0
+h2,
+h3,
+h4 {
+    color: #636AB1;
+    margin: 0.65em 0
 }
 
 .btn {
     border-radius: 0px;
     padding: 10px 18px;
-    border-bottom: 5px solid #255D8F;
+    border-bottom: 5px solid darken($base-link-color, 10%);
     color: #fff !important;
-    box-shadow:none;
-    text-decoration: none;
-
-    &:after{
-        display:none;
+    box-shadow: none;
+    text-decoration: none !important;
+    &:after {
+        display: none;
     }
 }
 
 //header
 .logo {
-    background: none;
-    width: 100%;
-    font-size: 2.063em;
-    color: #fff;
-    font-weight: bold;
-    height:auto;
-    margin:40px 0;
-
-    &:hover, &:focus, &:visited {
-        text-decoration:none;
-        color:#fff;
+    background-image: url(../images/fis-logo.svg);
+    background-size:100% 100%;
+    width:495px;
+    height:36px;
+    margin:0;
+    @media (max-width: 767px) {
+        width:330px;
+        height:24px;
     }
-    
-    &:before {
-        content: "Family Information Service";
+    @media (max-width: 500px) {
+        background-image: url(../images/fis-logo-mobile.svg);
+        width:150px;
+        height:79px;
+    }
+    &:hover,
+    &:focus,
+    &:visited {
+        text-decoration: none;
+        color: #fff;
     }
 }
-.header-right{
-    background: url(../images/cfl-logo-white.png) center right no-repeat;
-    height:120px;
+
+.sectionHeader .container-fluid{
+    background-image: url(../images/cfl-logo-white.png);
+    background-position:center right 15px;
+    background-repeat:no-repeat;
+    height: 120px;
 }
 
 //footer
-footer.main
-{
-    background-color:$dark-grey;
-    position:relative;
-    margin-top:220px;
-
-    &:before{
-        content:"";
-        background-image:url(../images/footer.svg);
-        background-position:center bottom;
-        height:181px;
-        width:100%;
-        display:block;
-        position:absolute;
-        top:-180px;
-    }
-
-    .footer{
-        background:$dark-grey;
-
-    &:after {
-    content: "";
-    width: 85px;
-    height: 85px;
-    display: inline-block;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    background: url(../images/cfl-logo-white.png) center center no-repeat;
-}
-    }
-
-    .footerGlobal{
-        background:darken($dark-grey, 10%) ;
-    }
-}
-
-
-
-
-.promoListWebpart ul{
-   
-   padding:0px;
-   list-style: none; 
-
- li.blockLink {
-
-
-    a {
-        background-color: #F0F6F8 !important;
+footer.main {
+    background-color: $dark-grey;
+    position: relative;
+    margin-top: 220px;
+    &:before {
+        content: "";
+        background-image: url(../images/footer.svg);
+        background-position: center bottom;
+        height: 181px;
+        width: 100%;
         display: block;
-        padding: 40px 0;
-        position: relative;
-        background-size: 101px !important;
-        background-position: center 25% !important;
-        text-align: center;
-        min-height:230px;
-     
-        .info {
-           
-            font-size: 18px;
-            padding: 18px 40px;
-            font-weight:400;
-            opacity: 1;
-            position:absolute;
-            left:0;
-            bottom:0;
-            width:100%;
-            color: #fff;
+        position: absolute;
+        top: -180px;
+    }
+    .footer {
+        background: $dark-grey;
+        &:after {
+            content: "";
+            width: 85px;
+            height: 85px;
+            display: inline-block;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            background: url(../images/cfl-logo-white.png) center center no-repeat;
+        }
+    }
+    .footerGlobal {
+        background: darken($dark-grey, 10%);
+    }
+}
 
-
-            .arrow {
-                
-                height:auto;
-                width:auto;
-                right:15px;
-                bottom:15px;
+.promoListWebpart ul {
+    padding: 0px;
+    list-style: none;
+    li.blockLink {
+        padding: 10px;
+        a {
+            background-color: #F0F6F8 !important;
+            display: block;
+            padding: 40px 0;
+            position: relative;
+            background-size: 101px !important;
+            background-position: center 25% !important;
+            text-align: center;
+            min-height: 230px;
+            .info {
+                font-size: 18px;
+                padding: 20px;
+                font-weight: 400;
+                opacity: 1;
                 position: absolute;
-
-                &:after{
-                    content: '\f138';
-                    font-family: FontAwesome;
-                    font-weight: normal;
-                    font-style: normal;
-                    text-decoration: none !important;
-                    border: none;
-                    font-size: 18px;
-                    top:auto;
-                    bottom:15px;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                color: #fff;
+                line-height: 1.4;
+                &:after {
+                    display: none;
+                }
+                .arrow {
+                    height: auto;
+                    width: auto;
+                    right: 15px;
+                    bottom: 15px;
+                    position: absolute;
+                    background: transparent !important;
+                    &:after {
+                        right: 0;
+                        top: 50%;
+                        margin: 0;
+                        width: auto;
+                        bottom: 0;
+                        line-height: 0.7;
+                    }
+                }
+                &:hover {
+                    background: transparent;
+                }
+                .secondaryInfo {
+                    position: relative;
+                    display: block;
+                    font-size: 15px;
+                    line-height: 1.2em;
+                    margin: 5px 0 0;
+                    padding: 0 15px 0 0;
+                    background: transparent !important;
+                    &:after {
+                        display: none;
+                    }
                 }
             }
-
-            &:hover{
-                background:transparent;
+            &:hover .info {
+                background: transparent;
             }
-
-         .secondaryInfo {
-                position: relative;
-                display: block;
-                font-size: 15px;
-                line-height: 1.2em;
-                margin: 5px 0 0;
-                padding: 0 15px 0 0;
-            }
-
-
         }
-
-            &:hover
-             .info{
-                background:transparent;
+        &.purple a,
+        &.purple a .info {
+            background-color: $purple !important;
+            &:hover,
+            &:hover .info {
+                background-color: darken( $purple, 10%) !important;
             }
+        }
+        &.blue a,
+        &.blue a .info {
+            background-color: $blue !important;
+            &:hover,
+            &:hover .info {
+                background-color: darken($blue, 10%) !important;
+            }
+        }
+        &.lightblue a,
+        &.lightblue a .info {
+            background-color: $light-blue !important;
+            color: #525252;
+            .secondaryInfo {
+                color: #525252;
+            }
+            &:hover,
+            &:hover .info {
+                background-color: lighten($light-blue, 3%) !important;
+            }
+            .info .arrow:after {
+                color: #525252;
+            }
+        }
+        &.grey a,
+        &.grey a .info {
+            background-color: $dark-grey !important;
+            &:hover,
+            &:hover .info {
+                background-color: darken($dark-grey, 10%) !important;
+            }
+        }
+        &.promo a {
+            background-size: cover !important;
+            min-height: 170px;
+            .info {
+                left: 0px;
+                padding: 20px 50px 20px 20px;
+                text-align: left;
+            }
+            .secondaryInfo {
+                text-align: left;
+            }
+        }
     }
-
-
-
-&.purple a, &.purple a .info {
-    background-color: $purple !important;
-    &:hover,  &:hover .info{
-         background-color:darken( $purple, 10%) !important;
-    }
-
-
 }
-
-&.blue a, &.blue a .info {
-    background-color: $blue !important;
-        &:hover, &:hover .info{
-         background-color:darken($blue , 10%) !important;
-    }
-
-    
-}
-
-&.lightblue a, &.lightblue a .info  {
-    background-color: $light-blue !important;
-    color:#525252;
-
-    .secondaryInfo{
-        color:#525252;
-    }
-
-        &:hover,  &:hover .info {
-         background-color:lighten($light-blue, 3%) !important;
-    }
-
-
-    .info .arrow:after{
-        color:#525252;
-    }
-}
-
-&.grey a, &.grey a .info {
-    background-color: $dark-grey !important;
-
-           &:hover,  &:hover .info{
-         background-color:darken($dark-grey, 10%) !important;
-    }
-}
-
-
-&.promo a {
-
-    background-size:cover !important;
-    min-height:170px;
-
-    .info{
-        left:0px;
-        padding:20px 50px 20px 20px;
-        text-align: left;
-    }
-
-}
-
-
- }
-
-
-}
-
 
 
 /*******************
 BLOCK LINK
 ******************/
 
-.blockLink{
-	padding:10px;
+.blockLink {
+    padding: 10px;
 }
-
 
 .blockLink a:hover,
-.blockLink a:focus{
-    background:#F0F6F8;
+.blockLink a:focus {
+    background: #F0F6F8;
 }
-
-
 
 
 /* sizes */
 
-.five.blockLink{
-    width:20%;
+.five.blockLink {
+    width: 20%;
     float: left;
 }
 
-.four.blockLink{
-    width:25%;
-    float:left;
+.four.blockLink {
+    width: 25%;
+    float: left;
 }
 
-.three.blockLink{
-    width:33.333333%;
-    float:left;
+.three.blockLink {
+    width: 33.333333%;
+    float: left;
 }
 
-.two.blockLink{
-    width:50%;
-    float:left;
+.two.blockLink {
+    width: 50%;
+    float: left;
 }
 
-.one.blockLink{
-    width:100%;
-    float:left;
-    padding:0;
-    margin-bottom:30px;
+.one.blockLink {
+    width: 100%;
+    float: left;
+    padding: 0;
+    margin-bottom: 30px;
 }
+
 
 /* responsive */
 
-@media (max-width: 991px){
-    
+@media (max-width: 991px) {
     .blockLink a {
         padding: 0;
         min-height: 0;
     }
-    
-    .three.blockLink, .four.blockLink, .five.blockLink, .six.blockLink{
-        width:50%;
-        float:left;
+    .three.blockLink,
+    .four.blockLink,
+    .five.blockLink,
+    .six.blockLink {
+        width: 50%;
+        float: left;
     }
-    
-    .blockLink a img{
-        display:none;
+    .blockLink a img {
+        display: none;
     }
-
-    .blockLink a span.info{
-        position:relative;
-        width:100%;
-        left:0;
-        bottom:0;
+    .blockLink a span.info {
+        position: relative;
+        width: 100%;
+        left: 0;
+        bottom: 0;
         padding: 18px 40px 18px 20px;
-        display:block;
-        text-align:left;
+        display: block;
+        text-align: left;
     }
-
 }
 
-@media (max-width: 600px){
-    
-    .blockLink{
-        padding:5px 0;
+@media (max-width: 600px) {
+    .blockLink {
+        padding: 5px 0;
     }
-    
-    .blockLink.promo{
-        padding:10px 0;
+    .blockLink.promo {
+        padding: 10px 0;
     }
-    
-    .two.blockLink, .three.blockLink, .four.blockLink, .five.blockLink, .six.blockLink{
-        width:100%;
+    .two.blockLink,
+    .three.blockLink,
+    .four.blockLink,
+    .five.blockLink,
+    .six.blockLink {
+        width: 100%;
     }
-
 }
+
 
 /*BLOCK LINK PROMO*/
 
-.blockLink.promo a{
-
-    overflow:hidden;
+.blockLink.promo a {
+    overflow: hidden;
 }
 
 .blockLink.promo a:hover img,
-.blockLink.promo a:focus img{
+.blockLink.promo a:focus img {
     -webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
-
-
-.blockLink.promo.text a span.info{
+.blockLink.promo.text a span.info {
     padding: 20px 40px 20px 20px;
     height: 100%;
     width: 100%;
 }
 
-
-.blockLink.external a span.info span.arrow:after{
+.blockLink.external a span.info span.arrow:after {
     content: '\f08e';
 }
 
 
-
 /* image - sizing*/
 
-.blockLink.promo.double a{
-    height:360px;
+.blockLink.promo.double a {
+    height: 360px;
 }
 
-.blockLink.promo.double a span.info{
-    font-size:22px;
+.blockLink.promo.double a span.info {
+    font-size: 22px;
 }
 
-
-
-.five.blockLink.promo, .six.blockLink.promo {
+.five.blockLink.promo,
+.six.blockLink.promo {
     float: left;
     display: block;
 }
 
-.blockLink.promo.text a img{
-    display:none;
+.blockLink.promo.text a img {
+    display: none;
 }
+
 
 /*responsive*/
 
-@media (max-width: 1199px){
-
-    .blockLink.promo.text a span.info{
-        height:100%;
-        width:100%;
-    }
-    
-    .blockLink.promo a span.info{
-        font-size:1rem;
-        padding:20px 40px 20px 20px;
-    }
-    
-    .blockLink.promo a img {
-        display: block;
-    }
-    
-}
-
-@media (max-width: 991px){
-
-    
-    .blockLink.promo a span.info{
-        width:100%;
-        height:auto;
-        position:absolute;
-    }
-    
-    .blockLink.promo.three a img, .blockLink.promo.four a img{
-        width:600px;
-    }
-    
-}
-
-@media (max-width: 600px){
-    
- 
-    
-    .blockLink.promo a{
-        height:220px;
-    }
-    
-    .blockLink.promo.text a{
-        height:auto;
-    }
-    
-    .blockLink.promo.text a span.info{
-        position:relative;
-    }
-    
-}
-
-
-@media (min-width: 601px) and (max-width: 991px){
-    
-    
-    .blockLink.promo a span.info {
-        font-size:1rem;
+@media (max-width: 1199px) {
+    .blockLink.promo.text a span.info {
         height: 100%;
         width: 100%;
     }
-    
+    .blockLink.promo a span.info {
+        font-size: 1rem;
+        padding: 20px 40px 20px 20px;
+    }
+    .blockLink.promo a img {
+        display: block;
+    }
 }
+
+@media (max-width: 991px) {
+    .blockLink.promo a span.info {
+        width: 100%;
+        height: auto;
+        position: absolute;
+    }
+    .blockLink.promo.three a img,
+    .blockLink.promo.four a img {
+        width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    .blockLink.promo a {
+        height: 220px;
+    }
+    .blockLink.promo.text a {
+        height: auto;
+    }
+    .blockLink.promo.text a span.info {
+        position: relative;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 991px) {
+    .blockLink.promo a span.info {
+        font-size: 1rem;
+        height: 100%;
+        width: 100%;
+    }
+}
+
 
 /*block link btn*/
 
-.blockLink.button a{
-    min-height:0;
-    height:auto;
-    padding:0;
-    text-align:left;
-    display:inline-block;
-    width:100%;
+.blockLink.button a {
+    min-height: 0;
+    height: auto;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
 }
 
-.blockLink.button img{
-    display:none
+.blockLink.button img {
+    display: none
 }
 
-.blockLink.button a span.info{
-    padding:20px 40px 20px 20px !important;
-    display:block;
-    position:relative;
+.blockLink.button a span.info {
+    padding: 20px 40px 20px 20px !important;
+    display: block;
+    position: relative;
 }
+
 
 /*block link content*/
 
-.blockLink.content{
-	text-align:center;
-	padding:10px;
-	margin:0;
-    background:transparent;
-    position:relative;
-    display:table;
+.blockLink.content {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    background: transparent;
+    position: relative;
+    display: table;
     min-height: 250px;
 }
 
-.blockLink.content span.content{
-	background:transparent;
-    display:table-cell;
+.blockLink.content span.content {
+    background: transparent;
+    display: table-cell;
     vertical-align: middle;
 }
 
-.blockLink.content span.content p{
-	margin:0;
-    font-size:2.7rem;
-    line-height:1.2em;
-    color:#8C5AA0;
-    font-weight:bold;
+.blockLink.content span.content p {
+    margin: 0;
+    font-size: 2.7rem;
+    line-height: 1.2em;
+    color: #8C5AA0;
+    font-weight: bold;
 }
 
-.blockLink.content a{
-    display:none;
+.blockLink.content a {
+    display: none;
 }
+
 
 /*BLOCK LINK END*/
+
 
 /*********************
 docs
 **********************/
 
-.doc{
-    padding:10px;
-    margin:0;
+.doc {
+    padding: 10px;
+    margin: 0;
 }
 
-.doc a{
-    background:#676767;
-    display:block;
-    text-align:left;
-    position:relative;
+.doc a {
+    background: #676767;
+    display: block;
+    text-align: left;
+    position: relative;
 }
 
-.doc a:hover, .doc a:focus{
-    background:#525252;
+.doc a:hover,
+.doc a:focus {
+    background: #525252;
 }
 
-.doc a:hover span.info, .doc a:focus span.info{
-    background:#676767;
-    color:#fff;
+.doc a:hover span.info,
+.doc a:focus span.info {
+    background: #676767;
+    color: #fff;
 }
 
-.doc a:before{
+.doc a:before {
     content: '\f138';
     font-family: FontAwesome;
-    position:absolute;
-    top:0px;
-    left:0px;
-    height:45px;
-    width:45px;
-    display:block;
-    padding:8px 10px;
-    color:#fff;
-    font-size:30px;
-
-
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 45px;
+    width: 45px;
+    display: block;
+    padding: 8px 10px;
+    color: #fff;
+    font-size: 30px;
 }
 
-.doc.PDF a:before{
-  content: '\f1c1';
-  background:#ED1F24;
+.doc.PDF a:before {
+    content: '\f1c1';
+    background: #ED1F24;
 }
 
-.doc.word a:before{
+.doc.word a:before {
     content: '\f1c2';
-    background:#294BA0;
+    background: #294BA0;
 }
 
-.doc.xl a:before{
+.doc.xl a:before {
     content: '\f1c3';
-    background:#269129;
+    background: #269129;
 }
 
-.doc.external a:before{
+.doc.external a:before {
     content: '\f08e';
-    background:rgba(0,0,0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
 }
 
-
-
-
-.doc a span.info{
-    background:#fff;
-    display:inline-block;
-    width:100%;
-    color:#676767;
-    padding:10px;
-    min-height:170px;
-    margin-top:45px;
-    padding-bottom:40px;
+.doc a span.info {
+    background: #fff;
+    display: inline-block;
+    width: 100%;
+    color: #676767;
+    padding: 10px;
+    min-height: 170px;
+    margin-top: 45px;
+    padding-bottom: 40px;
 }
 
-.doc a span.info span.arrow{
-    position:absolute;
-    height:auto;
-    width:20px;
-    right:10px;
-    bottom:10px;
-    background:transparent;
+.doc a span.info span.arrow {
+    position: absolute;
+    height: auto;
+    width: 20px;
+    right: 10px;
+    bottom: 10px;
+    background: transparent;
 }
 
-.doc a span.info span.arrow:after{
+.doc a span.info span.arrow:after {
     content: '\f138';
     font-family: FontAwesome;
     font-weight: normal;
@@ -745,17 +708,17 @@ docs
     border: none;
 }
 
-.doc a span.thirdInfo{
-    position:absolute;
-    top:8px;
-    right:10px;
-    color:#f3f3f3;
+.doc a span.thirdInfo {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    color: #f3f3f3;
 }
 
 .sectionOne .doc a span.info,
 .sectionThree .doc a span.info,
-.sectionFive .doc a span.info{
-    background:#F0F6F8;
+.sectionFive .doc a span.info {
+    background: #F0F6F8;
 }
 
 .sectionOne .doc a span.info:hover,
@@ -763,81 +726,81 @@ docs
 .sectionThree .doc a span.info:hover,
 .sectionThree .doc a span.info:focus,
 .sectionFive .doc a span.info:hover,
-.sectionFive .doc a span.info:focus{
-    background:#676767;
+.sectionFive .doc a span.info:focus {
+    background: #676767;
 }
+
 
 /*sizes*/
 
-.five.doc{
-    width:20%;
-    float:left;
+.five.doc {
+    width: 20%;
+    float: left;
 }
 
-.five.doc a span.info{
-    min-height:230px;
+.five.doc a span.info {
+    min-height: 230px;
 }
 
-.four.doc{
-    width:25%;
-    float:left;
+.four.doc {
+    width: 25%;
+    float: left;
 }
 
-.three.doc{
-    width:33.333333%;
-    float:left;
+.three.doc {
+    width: 33.333333%;
+    float: left;
 }
 
-.two.doc{
-    width:50%;
-    float:left;
+.two.doc {
+    width: 50%;
+    float: left;
 }
 
-.one.doc{
-    width:100%;
-    float:left;
-    padding:0;
-    margin-bottom:30px;
+.one.doc {
+    width: 100%;
+    float: left;
+    padding: 0;
+    margin-bottom: 30px;
 }
+
 
 /* responsive */
 
-@media (max-width: 1200px){
-
-    .doc a span.info{
-        min-height:220px;
+@media (max-width: 1200px) {
+    .doc a span.info {
+        min-height: 220px;
     }
-    
-    .five.doc a span.info{
-        min-height:300px;
+    .five.doc a span.info {
+        min-height: 300px;
     }
-    
 }
 
-@media (max-width: 991px){
-    
-    .three.doc, .four.doc, .five.doc{
-        width:50%;
-        float:left;
+@media (max-width: 991px) {
+    .three.doc,
+    .four.doc,
+    .five.doc {
+        width: 50%;
+        float: left;
     }
-    
-    .five.doc a span.info, .doc a span.info{
-        min-height:170px;
+    .five.doc a span.info,
+    .doc a span.info {
+        min-height: 170px;
     }
-
 }
 
-@media (max-width: 600px){
-    
-    .two.doc, .three.doc, .four.doc, .five.doc{
-        width:100%;
+@media (max-width: 600px) {
+    .two.doc,
+    .three.doc,
+    .four.doc,
+    .five.doc {
+        width: 100%;
     }
-    
-    .doc a span.info{
-        min-height:0px;
+    .doc a span.info {
+        min-height: 0px;
     }
-
 }
+
 
 /*docs - end*/
 
@@ -845,78 +808,122 @@ docs
 /*simple list*/
 
 .simpleList ul {
-    list-style:none;
-    text-align:left;
-    border-top:1px solid #D8DDDF;
-    padding:0px;
+    list-style: none;
+    text-align: left;
+    border-top: 1px solid #D8DDDF;
+    padding: 0px;
 }
 
-.simpleList ul li{
-    border-bottom:1px solid #D8DDDF;
-    margin:0px;
-    width:100%;
+.simpleList ul li {
+    border-bottom: 1px solid #D8DDDF;
+    margin: 0px;
+    width: 100%;
 }
 
-.simpleList ul li a{
-    padding:2% 10% 2% 2%;
-    color:#525252;
-    text-decoration:none;
-    display:inline-block;
-    width:100%;
-    position:relative;
-    
-    &:after{
-    content: '\f138';
-    font-family: FontAwesome;
-    font-size:22px;
-    font-weight: normal;
-    font-style: normal;
-    text-decoration: none !important;
-    border: none;
-    position:absolute;
-    right:15px;
-    top:50%;
-    margin-top:-15px;
-    color:#525252;
-}
-}
-
-.simpleList ul li a:hover, .simpleList ul li a:focus{
-    background:#F0F6F8 url(../img/arrow-grey.svg) 98% center no-repeat;
+.simpleList ul li a {
+    padding: 2% 10% 2% 2%;
+    color: #525252;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    &:after {
+        content: "\f105";
+        font-family: FontAwesome;
+        font-size: 22px;
+        font-weight: normal;
+        font-style: normal;
+        text-decoration: none !important;
+        border: none;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        margin-top: -15px;
+        color: #525252;
+    }
 }
 
-.simpleList ul li a span{
-    display:block;
-    color:#999;
+.simpleList ul li a:hover,
+.simpleList ul li a:focus {
+    background: #F0F6F8 url(../img/arrow-grey.svg) 98% center no-repeat;
+}
+
+.simpleList ul li a span {
+    display: block;
+    color: #999;
 }
 
 
 /*related pages*/
 
 .sideNav {
-    background:#F0F6F8;
-    margin-bottom:30px;
-
-    padding:0px;
-
-   li{
-        margin:0px;
-
-           a{
-            padding: 20px;
+    background: #F0F6F8;
+    margin-bottom: 30px;
+    padding:0;
+    li {
+        margin: 0px !important;
+        a {
+            padding: 20px !important;
             border-bottom: 1px solid #D8DDDF;
             margin: 0;
-            text-decoration:none;
-            background:#f6f6f6;
-
-
-             &.active{
-                background:#8C5AA0;
-                color:#fff;
-             }
+            text-decoration: none;
+            background:transparent;
+            &.active {
+                background: #8C5AA0;
+                color: #fff;
+            }
+        }
     }
-    }
-
- 
 }
 
+#nav-search {
+    float: left;
+    margin: 10px 0;
+    @media (max-width: 767px){
+        margin:-2px 0 0 0;
+    }
+}
+
+.ms-srch-sb > .ms-srch-sb-searchLink:before{
+    color:$base-link-color;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.promoListWebpart ul li.blockLink a:focus,
+.promoListWebpart ul li.blockLink a:active,
+.promoListWebpart ul li.blockLink a:focus .info,
+.promoListWebpart ul li.blockLink a:active .info{
+    background-color:$focus-color !important;
+    color:#333 !important;
+}
+
+@media (max-width: 767px){
+    .main-nav .container-fluid ul li a.selected {
+        color: $base-font-color;;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    font-weight:700;
+}
+
+.col-lg-12{
+    .promoListWebpart ul{
+        margin:0 -15px;
+    }
+}
+
+@media (max-width: 600px){
+    .promoListWebpart ul li.blockLink {
+        padding: 10px;
+    }
+}
